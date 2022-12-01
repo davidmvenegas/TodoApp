@@ -1,5 +1,5 @@
 # ExpoTodoApp
-## A boilerplate todo app for bootstraping other projects
+### A Boilerplate Todo app for bootstraping other projects
 Comes with:
 - Navigation
 - Authentication
