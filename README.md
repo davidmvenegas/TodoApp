@@ -5,4 +5,4 @@ Comes with:
 - Navigation
 - Authentication
 - State Managment (Redux)
-- Firebase for baisc CRUD operations
+- Firebase Firestore for baisc CRUD operations
