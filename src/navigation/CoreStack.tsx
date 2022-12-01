@@ -3,9 +3,9 @@ import { Pressable } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // Import Components
-import ModalScreen from '../screens/ModalScreen';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+import ModalScreen from '../screens/CoreScreens/ModalScreen';
+import TabOneScreen from '../screens/CoreScreens/TabOneScreen';
+import TabTwoScreen from '../screens/CoreScreens/TabTwoScreen';
 // Import Assets
 import Colors from '../constants/Colors';
 import { FontAwesome } from '@expo/vector-icons';
@@ -27,13 +27,15 @@ function RootNavigator() {
 
 function BottomTabNavigator() {
     return (
-        <BottomTab.Navigator initialRouteName="TabOne" screenOptions={{ tabBarActiveTintColor: Colors.tint }}>
+        <BottomTab.Navigator
+            initialRouteName="TabOne"
+            screenOptions={{ tabBarActiveTintColor: Colors.tint }}>
             <BottomTab.Screen
                 name="TabOne"
                 component={TabOneScreen}
                 options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
                     title: 'Tab One',
-                    tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+                    tabBarIcon: () => <TabBarIcon name="code" color="white" />,
                     headerRight: () => (
                         <Pressable
                             onPress={() => navigation.navigate('Modal')}
@@ -46,8 +48,8 @@ function BottomTabNavigator() {
             <BottomTab.Screen
                 name="TabTwo"
                 component={TabTwoScreen}
-                options={{ title: 'Tab Two', tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} /> }}
-            />
+                options={{ title: 'Tab Two', tabBarIcon: () => <TabBarIcon name="code" color="white" /> }}
+                />
         </BottomTab.Navigator>
     );
 }

@@ -9,6 +9,11 @@ const NavigationMap: LinkingOptions<RootStackParamList> = {
     screens: {
       Root: {
         screens: {
+          Auth: {
+            screens: {
+              LandingScreen: 'landing',
+            },
+          },
           TabOne: {
             screens: {
               TabOneScreen: 'one',
@@ -22,7 +27,6 @@ const NavigationMap: LinkingOptions<RootStackParamList> = {
         },
       },
       Modal: 'modal',
-      NotFound: '*',
     },
   },
 };
