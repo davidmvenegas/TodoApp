@@ -1,5 +1,5 @@
 # ExpoTodoApp
-### A Boilerplate Todo app for bootstraping other projects
+### A Boilerplate Expo Todo app for bootstraping other projects, written entirely in TypeScript
 Comes with:
 - Navigation
 - Authentication
