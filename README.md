@@ -1,5 +1,5 @@
 # Todo App
-### A Boilerplate Expo Todo app for bootstraping other projects - written entirely in TypeScript
+### A Boilerplate Todo app for bootstraping other projects - built with Expo & TypeScript
 
 Comes with:
 - Navigation
